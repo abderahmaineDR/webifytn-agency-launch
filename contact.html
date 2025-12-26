@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - WebifyTN</title>
+    <meta name="description" content="Contact WebifyTN for professional website services. Get in touch to discuss your project and get a quote.">
+    <meta name="keywords" content="web design, static websites, landing pages, portfolio websites, Tunisia, digital agency">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans antialiased">
+    <nav class="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" role="navigation" aria-label="Main navigation">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <!-- Logo -->
+                <a href="./index.html" class="flex items-center gap-2" aria-label="WebifyTN Home">
+                    <div class="text-2xl font-bold tracking-tight text-foreground">
+                        Webify<span class="text-accent">TN</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden items-center gap-8 md:flex" role="menubar">
+                    <a href="./index.html" class="text-sm font-medium transition-colors hover:text-accent text-muted-foreground">Home</a>
+                    <a href="./about.html" class="text-sm font-medium transition-colors hover:text-accent text-muted-foreground">About</a>
+                    <a href="./services.html" class="text-sm font-medium transition-colors hover:text-accent text-muted-foreground">Services</a>
+                    <a href="./portfolio.html" class="text-sm font-medium transition-colors hover:text-accent text-muted-foreground">Portfolio</a>
+                    <a href="./contact.html" class="text-sm font-medium transition-colors hover:text-accent text-foreground" aria-current="page">Contact</a>
+                    <button class="theme-toggle text-foreground hover:text-accent" aria-label="Toggle dark/light mode">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <path d="M12 1v2"></path>
+                            <path d="M12 21v2"></path>
+                            <path d="M4.22 4.22l1.42 1.42"></path>
+                            <path d="M18.36 18.36l1.42 1.42"></path>
+                            <path d="M1 12h2"></path>
+                            <path d="M21 12h2"></path>
+                            <path d="M4.22 19.78l1.42-1.42"></path>
+                            <path d="M18.36 5.64l1.42-1.42"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="./contact.html" class="btn btn-default btn-sm bg-accent text-accent-foreground hover:bg-accent/90" role="button">Get Started</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="nav-menu-btn md:hidden" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu border-t border-border/40 bg-background" id="mobile-menu" role="menu" aria-label="Mobile navigation">
+            <div class="container mx-auto space-y-1 px-4 py-4">
+                <a href="./index.html" class="mobile-menu-link" role="menuitem">Home</a>
+                <a href="./about.html" class="mobile-menu-link" role="menuitem">About</a>
+                <a href="./services.html" class="mobile-menu-link" role="menuitem">Services</a>
+                <a href="./portfolio.html" class="mobile-menu-link" role="menuitem">Portfolio</a>
+                <a href="./contact.html" class="mobile-menu-link active" role="menuitem" aria-current="page">Contact</a>
+                <div class="pt-2">
+                    <button class="theme-toggle w-full btn btn-outline text-foreground hover:text-accent" role="button" aria-label="Toggle dark/light mode">
+                        <span class="flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <path d="M12 1v2"></path>
+                                <path d="M12 21v2"></path>
+                                <path d="M4.22 4.22l1.42 1.42"></path>
+                                <path d="M18.36 18.36l1.42 1.42"></path>
+                                <path d="M1 12h2"></path>
+                                <path d="M21 12h2"></path>
+                                <path d="M4.22 19.78l1.42-1.42"></path>
+                                <path d="M18.36 5.64l1.42-1.42"></path>
+                            </svg>
+                            Toggle Theme
+                        </span>
+                    </button>
+                </div>
+                <div class="pt-2">
+                    <a href="./contact.html" class="btn btn-default w-full bg-accent text-accent-foreground hover:bg-accent/90" role="button">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="min-h-screen">
+        <!-- Hero Section -->
+        <section class="bg-primary text-primary-foreground py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center">
+                    <h1 class="text-4xl font-bold tracking-tight text-balance sm:text-5xl">Get in Touch</h1>
+                    <p class="mt-6 text-lg leading-relaxed text-primary-foreground/90 text-pretty">
+                        Ready to start your project? Have questions about our services? We're here to help. Fill out the form
+                        below and we'll get back to you within 24 hours.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form & Info -->
+        <section class="bg-background py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid gap-12 lg:grid-cols-3">
+                    <!-- Contact Information -->
+                    <div class="lg:col-span-1">
+                        <div class="space-y-6">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-4">Contact Information</h2>
+                                <p class="text-muted-foreground leading-relaxed">
+                                    Reach out to us and we'll respond as soon as possible. We're excited to learn about your project.
+                                </p>
+                            </div>
+
+                            <div class="card border-border">
+                                <div class="card-content p-6 space-y-4">
+                                    <div class="flex items-start gap-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-accent mt-0.5 shrink-0">
+                                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                        </svg>
+                                        <div>
+                                            <p class="font-medium text-sm mb-1">Email</p>
+                                            <a
+                                                href="mailto:contact@webifytn.com"
+                                                class="text-sm text-muted-foreground hover:text-accent transition-colors"
+                                            >
+                                                contact@webifytn.com
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-accent mt-0.5 shrink-0">
+                                            <path d="M21.5 15.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 1 1 5 0Z"></path>
+                                            <path d="M17 19.4a2 2 0 1 1-4 0 2 2 0 1 1 4 0Z"></path>
+                                            <path d="M17.5 19H9a2 2 0 0 1-2-2V9.5a.5.5 0 0 0-.5-.5H4"></path>
+                                            <path d="m22 13-1.25-4.8a2 2 0 0 0-1.94-1.5H3.26a2 2 0 0 0-1.94 1.5L.07 13"></path>
+                                        </svg>
+                                        <div>
+                                            <p class="font-medium text-sm mb-1">Location</p>
+                                            <p class="text-sm text-muted-foreground">Tunisia</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-accent mt-0.5 shrink-0">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <path d="M12 6v6l4 2"></path>
+                                        </svg>
+                                        <div>
+                                            <p class="font-medium text-sm mb-1">Response Time</p>
+                                            <p class="text-sm text-muted-foreground">Within 24 hours</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-muted rounded-lg p-6">
+                                <h3 class="font-semibold mb-2">What to expect</h3>
+                                <ul class="space-y-2 text-sm text-muted-foreground">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-accent mt-1">•</span>
+                                        <span>We'll review your inquiry and respond within 24 hours</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-accent mt-1">•</span>
+                                        <span>We'll schedule a call to discuss your project in detail</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-accent mt-1">•</span>
+                                        <span>We'll provide a custom proposal with timeline and pricing</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="lg:col-span-2">
+                        <div class="card border-border">
+                            <div class="card-content p-8">
+                                <form id="contact-form" class="space-y-6">
+                                    <div class="grid gap-6 sm:grid-cols-2">
+                                        <div class="space-y-2">
+                                            <label for="name" class="form-label">
+                                                Full Name <span class="text-destructive" aria-label="required">*</span>
+                                            </label>
+                                            <input
+                                                type="text"
+                                                id="name"
+                                                name="name"
+                                                placeholder="Your name"
+                                                required
+                                                class="form-input"
+                                            />
+                                        </div>
+
+                                        <div class="space-y-2">
+                                            <label for="email" class="form-label">
+                                                Email Address <span class="text-destructive" aria-label="required">*</span>
+                                            </label>
+                                            <input
+                                                type="email"
+                                                id="email"
+                                                name="email"
+                                                placeholder="your@email.com"
+                                                required
+                                                class="form-input"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="grid gap-6 sm:grid-cols-2">
+                                        <div class="space-y-2">
+                                            <label for="projectType" class="form-label">
+                                                Project Type <span class="text-destructive" aria-label="required">*</span>
+                                            </label>
+                                            <select
+                                                id="projectType"
+                                                name="projectType"
+                                                required
+                                                class="form-input"
+                                            >
+                                                <option value="">Select a service</option>
+                                                <option value="vitrine">Vitrine Website</option>
+                                                <option value="landing">Landing Page</option>
+                                                <option value="portfolio">Portfolio Website</option>
+                                                <option value="static">Static Website</option>
+                                                <option value="other">Other / Not Sure</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="space-y-2">
+                                            <label for="budget" class="form-label">Budget Range</label>
+                                            <select
+                                                id="budget"
+                                                name="budget"
+                                                class="form-input"
+                                            >
+                                                <option value="">Select your budget</option>
+                                                <option value="small">Less than $1,000</option>
+                                                <option value="medium">$1,000 - $3,000</option>
+                                                <option value="large">$3,000 - $5,000</option>
+                                                <option value="enterprise">$5,000+</option>
+                                                <option value="discuss">Prefer to discuss</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="space-y-2">
+                                        <label for="message" class="form-label">
+                                            Project Details <span class="text-destructive" aria-label="required">*</span>
+                                        </label>
+                                        <textarea
+                                            id="message"
+                                            name="message"
+                                            placeholder="Tell us about your project, goals, and any specific requirements..."
+                                            required
+                                            rows="6"
+                                            class="form-textarea"
+                                        ></textarea>
+                                        <p class="text-xs text-muted-foreground">
+                                            Include details about your business, target audience, and any specific features you need.
+                                        </p>
+                                    </div>
+
+                                    <button
+                                        type="submit"
+                                        class="btn btn-default w-full bg-accent text-accent-foreground hover:bg-accent/90"
+                                        style="background-color: #2563eb;"
+                                    >
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-4 w-4">
+                                            <path d="M22 2L11 13"></path>
+                                            <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+                                        </svg>
+                                        Send Message
+                                    </button>
+
+                                    <p class="text-xs text-center text-muted-foreground">
+                                        By submitting this form, you agree to our privacy policy. We'll only use your information to
+                                        respond to your inquiry.
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="bg-muted py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-3xl">
+                    <h2 class="text-3xl font-bold tracking-tight text-balance mb-12 text-center">
+                        Frequently Asked Questions
+                    </h2>
+
+                    <div class="space-y-6">
+                        <div class="card border-border">
+                            <div class="card-content p-6">
+                                <h3 class="font-semibold mb-2 text-foreground">How long does it take to build a website?</h3>
+                                <p class="text-sm text-muted-foreground leading-relaxed">Most projects take 2-4 weeks from start to finish, depending on complexity and content requirements. We'll provide a detailed timeline in our proposal.</p>
+                            </div>
+                        </div>
+                        <div class="card border-border">
+                            <div class="card-content p-6">
+                                <h3 class="font-semibold mb-2 text-foreground">What information do you need to get started?</h3>
+                                <p class="text-sm text-muted-foreground leading-relaxed">We'll need details about your business, target audience, goals, and any specific features or design preferences. We'll guide you through everything during our discovery call.</p>
+                            </div>
+                        </div>
+                        <div class="card border-border">
+                            <div class="card-content p-6">
+                                <h3 class="font-semibold mb-2 text-foreground">Do you provide hosting and maintenance?</h3>
+                                <p class="text-sm text-muted-foreground leading-relaxed">Yes, we can recommend hosting solutions and provide ongoing maintenance packages. Our static websites are easy to host and maintain with minimal costs.</p>
+                            </div>
+                        </div>
+                        <div class="card border-border">
+                            <div class="card-content p-6">
+                                <h3 class="font-semibold mb-2 text-foreground">Can you help with content and copywriting?</h3>
+                                <p class="text-sm text-muted-foreground leading-relaxed">We can help refine your content or connect you with professional copywriters who understand your industry and can create compelling website copy.</p>
+                            </div>
+                        </div>
+                        <div class="card border-border">
+                            <div class="card-content p-6">
+                                <h3 class="font-semibold mb-2 text-foreground">What if I need changes after the website is live?</h3>
+                                <p class="text-sm text-muted-foreground leading-relaxed">We provide post-launch support and can make updates as needed. Our websites are built to be easily maintainable, and we offer ongoing support packages for regular updates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-border bg-card">
+        <div class="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <!-- Brand -->
+                <div class="lg:col-span-2">
+                    <div class="mb-4 text-2xl font-bold tracking-tight">
+                        Webify<span class="text-accent">TN</span>
+                    </div>
+                    <p class="mb-4 max-w-md text-sm text-muted-foreground leading-relaxed">
+                        Building strong web foundations that help businesses grow confidently online. Clean, high-quality static
+                        websites for professionals who value clarity and performance.
+                    </p>
+                    <div class="flex flex-col gap-2 text-sm text-muted-foreground">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+                                <path d="M17.5 19H9a2 2 0 0 1-2-2V9.5a.5.5 0 0 0-.5-.5H4"></path>
+                                <path d="m22 13-1.25-4.8a2 2 0 0 0-1.94-1.5H3.26a2 2 0 0 0-1.94 1.5L.07 13"></path>
+                                <path d="M21.5 15.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 1 1 5 0Z"></path>
+                                <path d="M17 19.4a2 2 0 1 1-4 0 2 2 0 1 1 4 0Z"></path>
+                            </svg>
+                            <span>Tunisia</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                            <a href="mailto:contact@webifytn.com" class="hover:text-accent transition-colors" aria-label="Email us at contact@webifytn.com">
+                                contact@webifytn.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="mb-4 text-sm font-semibold">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="./about.html" class="text-muted-foreground hover:text-accent transition-colors">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./services.html" class="text-muted-foreground hover:text-accent transition-colors">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./portfolio.html" class="text-muted-foreground hover:text-accent transition-colors">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="text-muted-foreground hover:text-accent transition-colors">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="mb-4 text-sm font-semibold">Services</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="./services.html#vitrine" class="text-muted-foreground hover:text-accent transition-colors">
+                                Vitrine Websites
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./services.html#landing" class="text-muted-foreground hover:text-accent transition-colors">
+                                Landing Pages
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./services.html#portfolio" class="text-muted-foreground hover:text-accent transition-colors">
+                                Portfolio Websites
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./services.html#static" class="text-muted-foreground hover:text-accent transition-colors">
+                                Static Websites
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 border-t border-border pt-8">
+                <div class="flex flex-col items-center justify-between gap-4 text-sm text-muted-foreground sm:flex-row">
+                    <p>© <span id="current-year">2025</span> WebifyTN. All rights reserved.</p>
+                    <p class="text-xs">
+                        Crafted by <span class="font-semibold">Abdou & Ameen</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

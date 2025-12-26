@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - WebifyTN</title>
+    <meta name="description" content="View our portfolio of professional static websites. See examples of vitrine websites, landing pages, and portfolio websites we've built.">
+    <meta name="keywords" content="web design, static websites, landing pages, portfolio websites, Tunisia, digital agency">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans antialiased">
+    <nav class="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" role="navigation" aria-label="Main navigation">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <!-- Logo -->
+                <a href="./index.html" class="flex items-center gap-2" aria-label="WebifyTN Home">
+                    <div class="text-2xl font-bold tracking-tight text-foreground">
+                        Webify<span class="text-accent">TN</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden items-center gap-8 md:flex" role="menubar">
+                    <a href="./index.html" class="text-sm font-medium transition-colors hover:text-accent text-muted-foreground">Home</a>
+                    <a href="./about.html" class="text-sm font-medium transition-colors hover:text-accent text-muted-foreground">About</a>
+                    <a href="./services.html" class="text-sm font-medium transition-colors hover:text-accent text-muted-foreground">Services</a>
+                    <a href="./portfolio.html" class="text-sm font-medium transition-colors hover:text-accent text-foreground" aria-current="page">Portfolio</a>
+                    <a href="./contact.html" class="text-sm font-medium transition-colors hover:text-accent text-muted-foreground">Contact</a>
+                    <button class="theme-toggle text-foreground hover:text-accent" aria-label="Toggle dark/light mode">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <path d="M12 1v2"></path>
+                            <path d="M12 21v2"></path>
+                            <path d="M4.22 4.22l1.42 1.42"></path>
+                            <path d="M18.36 18.36l1.42 1.42"></path>
+                            <path d="M1 12h2"></path>
+                            <path d="M21 12h2"></path>
+                            <path d="M4.22 19.78l1.42-1.42"></path>
+                            <path d="M18.36 5.64l1.42-1.42"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="./contact.html" class="btn btn-default btn-sm bg-accent text-accent-foreground hover:bg-accent/90" role="button">Get Started</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="nav-menu-btn md:hidden" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu border-t border-border/40 bg-background" id="mobile-menu" role="menu" aria-label="Mobile navigation">
+            <div class="container mx-auto space-y-1 px-4 py-4">
+                <a href="./index.html" class="mobile-menu-link" role="menuitem">Home</a>
+                <a href="./about.html" class="mobile-menu-link" role="menuitem">About</a>
+                <a href="./services.html" class="mobile-menu-link" role="menuitem">Services</a>
+                <a href="./portfolio.html" class="mobile-menu-link active" role="menuitem" aria-current="page">Portfolio</a>
+                <a href="./contact.html" class="mobile-menu-link" role="menuitem">Contact</a>
+                <div class="pt-2">
+                    <button class="theme-toggle w-full btn btn-outline text-foreground hover:text-accent" role="button" aria-label="Toggle dark/light mode">
+                        <span class="flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <path d="M12 1v2"></path>
+                                <path d="M12 21v2"></path>
+                                <path d="M4.22 4.22l1.42 1.42"></path>
+                                <path d="M18.36 18.36l1.42 1.42"></path>
+                                <path d="M1 12h2"></path>
+                                <path d="M21 12h2"></path>
+                                <path d="M4.22 19.78l1.42-1.42"></path>
+                                <path d="M18.36 5.64l1.42-1.42"></path>
+                            </svg>
+                            Toggle Theme
+                        </span>
+                    </button>
+                </div>
+                <div class="pt-2">
+                    <a href="./contact.html" class="btn btn-default w-full bg-accent text-accent-foreground hover:bg-accent/90" role="button">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="min-h-screen">
+        <!-- Hero Section -->
+        <section class="bg-primary text-primary-foreground py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center">
+                    <h1 class="text-4xl font-bold tracking-tight text-balance sm:text-5xl">Our Work</h1>
+                    <p class="mt-6 text-lg leading-relaxed text-primary-foreground/90 text-pretty">
+                        Explore examples of websites we've built for businesses, creators, and professionals. Each project
+                        reflects our commitment to clarity, performance, and professionalism.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="bg-background py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="card group overflow-hidden border-border hover:shadow-lg transition-shadow">
+                        <div class="h-48 bg-blue-500/10 flex items-center justify-center border-b border-border">
+                            <div class="text-center p-6">
+                                <div class="h-16 w-16 mx-auto rounded-lg bg-accent/20 flex items-center justify-center mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-accent">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                    </svg>
+                                </div>
+                                <span class="badge badge-secondary text-xs">
+                                    Vitrine Website
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-content p-6">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-accent transition-colors">
+                                Modern Business Consulting
+                            </h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed mb-4">Professional vitrine website for a business consulting firm. Clean design with service showcase, team profiles, and client testimonials.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge badge-outline text-xs">Corporate</span>
+                                <span class="badge badge-outline text-xs">Professional Services</span>
+                                <span class="badge badge-outline text-xs">Multi-page</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card group overflow-hidden border-border hover:shadow-lg transition-shadow">
+                        <div class="h-48 bg-teal-500/10 flex items-center justify-center border-b border-border">
+                            <div class="text-center p-6">
+                                <div class="h-16 w-16 mx-auto rounded-lg bg-accent/20 flex items-center justify-center mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-accent">
+                                        <path d="M12 19V5"></path>
+                                        <path d="M5 12l7-7 7 7"></path>
+                                    </svg>
+                                </div>
+                                <span class="badge badge-secondary text-xs">
+                                    Landing Page
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-content p-6">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-accent transition-colors">
+                                Product Launch Campaign
+                            </h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed mb-4">High-converting landing page for a SaaS product launch. Focused design with clear CTAs, feature highlights, and social proof.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge badge-outline text-xs">SaaS</span>
+                                <span class="badge badge-outline text-xs">Conversion-focused</span>
+                                <span class="badge badge-outline text-xs">Single-page</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card group overflow-hidden border-border hover:shadow-lg transition-shadow">
+                        <div class="h-48 bg-purple-500/10 flex items-center justify-center border-b border-border">
+                            <div class="text-center p-6">
+                                <div class="h-16 w-16 mx-auto rounded-lg bg-accent/20 flex items-center justify-center mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-accent">
+                                        <path d="M2 3h20"></path>
+                                        <path d="M21 7H3"></path>
+                                        <path d="M18 11H6"></path>
+                                        <path d="M15 15H9"></path>
+                                        <path d="M12 19H10"></path>
+                                    </svg>
+                                </div>
+                                <span class="badge badge-secondary text-xs">
+                                    Portfolio Website
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-content p-6">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-accent transition-colors">
+                                Creative Designer Portfolio
+                            </h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed mb-4">Visual-first portfolio for a creative designer. Project galleries, case studies, and integrated contact form for client inquiries.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge badge-outline text-xs">Creative</span>
+                                <span class="badge badge-outline text-xs">Visual Design</span>
+                                <span class="badge badge-outline text-xs">Gallery</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card group overflow-hidden border-border hover:shadow-lg transition-shadow">
+                        <div class="h-48 bg-orange-500/10 flex items-center justify-center border-b border-border">
+                            <div class="text-center p-6">
+                                <div class="h-16 w-16 mx-auto rounded-lg bg-accent/20 flex items-center justify-center mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-accent">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                    </svg>
+                                </div>
+                                <span class="badge badge-secondary text-xs">
+                                    Vitrine Website
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-content p-6">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-accent transition-colors">
+                                Local Restaurant Website
+                            </h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed mb-4">Elegant website for a local restaurant. Menu presentation, reservation integration, and location information with mobile-first design.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge badge-outline text-xs">Food & Beverage</span>
+                                <span class="badge badge-outline text-xs">Local Business</span>
+                                <span class="badge badge-outline text-xs">Mobile-first</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card group overflow-hidden border-border hover:shadow-lg transition-shadow">
+                        <div class="h-48 bg-green-500/10 flex items-center justify-center border-b border-border">
+                            <div class="text-center p-6">
+                                <div class="h-16 w-16 mx-auto rounded-lg bg-accent/20 flex items-center justify-center mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-accent">
+                                        <path d="M2 3h20"></path>
+                                        <path d="M21 7H3"></path>
+                                        <path d="M18 11H6"></path>
+                                        <path d="M15 15H9"></path>
+                                        <path d="M12 19H10"></path>
+                                    </svg>
+                                </div>
+                                <span class="badge badge-secondary text-xs">
+                                    Portfolio Website
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-content p-6">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-accent transition-colors">
+                                Freelance Developer Portfolio
+                            </h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed mb-4">Technical portfolio for a freelance developer. Skills showcase, project highlights, GitHub integration, and professional biography.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge badge-outline text-xs">Technology</span>
+                                <span class="badge badge-outline text-xs">Developer</span>
+                                <span class="badge badge-outline text-xs">Technical</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card group overflow-hidden border-border hover:shadow-lg transition-shadow">
+                        <div class="h-48 bg-pink-500/10 flex items-center justify-center border-b border-border">
+                            <div class="text-center p-6">
+                                <div class="h-16 w-16 mx-auto rounded-lg bg-accent/20 flex items-center justify-center mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-accent">
+                                        <path d="M12 19V5"></path>
+                                        <path d="M5 12l7-7 7 7"></path>
+                                    </svg>
+                                </div>
+                                <span class="badge badge-secondary text-xs">
+                                    Landing Page
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-content p-6">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-accent transition-colors">
+                                Event Registration Page
+                            </h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed mb-4">Focused landing page for conference registration. Event details, speaker lineup, schedule, and streamlined registration flow.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge badge-outline text-xs">Events</span>
+                                <span class="badge badge-outline text-xs">Registration</span>
+                                <span class="badge badge-outline text-xs">Time-sensitive</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card group overflow-hidden border-border hover:shadow-lg transition-shadow">
+                        <div class="h-48 bg-indigo-500/10 flex items-center justify-center border-b border-border">
+                            <div class="text-center p-6">
+                                <div class="h-16 w-16 mx-auto rounded-lg bg-accent/20 flex items-center justify-center mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-accent">
+                                        <path d="M2 3h20"></path>
+                                        <path d="M21 7H3"></path>
+                                        <path d="M18 11H6"></path>
+                                        <path d="M15 15H9"></path>
+                                        <path d="M12 19H10"></path>
+                                    </svg>
+                                </div>
+                                <span class="badge badge-secondary text-xs">
+                                    Portfolio Website
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-content p-6">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-accent transition-colors">
+                                Professional Photography
+                            </h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed mb-4">Stunning portfolio for a professional photographer. Full-screen galleries, client testimonials, and booking inquiry system.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge badge-outline text-xs">Photography</span>
+                                <span class="badge badge-outline text-xs">Visual</span>
+                                <span class="badge badge-outline text-xs">Gallery</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card group overflow-hidden border-border hover:shadow-lg transition-shadow">
+                        <div class="h-48 bg-slate-500/10 flex items-center justify-center border-b border-border">
+                            <div class="text-center p-6">
+                                <div class="h-16 w-16 mx-auto rounded-lg bg-accent/20 flex items-center justify-center mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-accent">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                    </svg>
+                                </div>
+                                <span class="badge badge-secondary text-xs">
+                                    Vitrine Website
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-content p-6">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-accent transition-colors">
+                                Legal Services Firm
+                            </h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed mb-4">Professional website for a law firm. Practice areas, attorney profiles, case results, and consultation request functionality.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge badge-outline text-xs">Legal</span>
+                                <span class="badge badge-outline text-xs">Professional</span>
+                                <span class="badge badge-outline text-xs">Corporate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card group overflow-hidden border-border hover:shadow-lg transition-shadow">
+                        <div class="h-48 bg-yellow-500/10 flex items-center justify-center border-b border-border">
+                            <div class="text-center p-6">
+                                <div class="h-16 w-16 mx-auto rounded-lg bg-accent/20 flex items-center justify-center mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-accent">
+                                        <path d="M12 19V5"></path>
+                                        <path d="M5 12l7-7 7 7"></path>
+                                    </svg>
+                                </div>
+                                <span class="badge badge-secondary text-xs">
+                                    Landing Page
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-content p-6">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-accent transition-colors">
+                                Webinar Lead Generation
+                            </h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed mb-4">Lead generation landing page for educational webinar. Value proposition, speaker credentials, and multi-step registration form.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge badge-outline text-xs">Education</span>
+                                <span class="badge badge-outline text-xs">Lead Gen</span>
+                                <span class="badge badge-outline text-xs">Webinar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Note -->
+        <section class="bg-muted py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center">
+                    <p class="text-muted-foreground leading-relaxed">
+                        <span class="font-medium text-foreground">Note:</span> The projects shown above are representative
+                        examples of the types of websites we build. Each project is customized to meet specific client needs and
+                        goals. Your website will be uniquely designed for your business.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- What Makes Our Projects Special -->
+        <section class="bg-background py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center mb-16">
+                    <h2 class="text-3xl font-bold tracking-tight text-balance sm:text-4xl">
+                        What Makes Our Projects Special
+                    </h2>
+                    <p class="mt-4 text-lg text-muted-foreground leading-relaxed">
+                        Every website we build shares these qualities
+                    </p>
+                </div>
+
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4 max-w-5xl mx-auto">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <div class="mx-auto h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
+                                <div class="h-4 w-4 rounded-full bg-accent"></div>
+                            </div>
+                        </div>
+                        <h3 class="mb-2 text-lg font-semibold">Fast Loading</h3>
+                        <p class="text-sm text-muted-foreground leading-relaxed">All our websites load in under 2 seconds, ensuring visitors stay engaged.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <div class="mx-auto h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
+                                <div class="h-4 w-4 rounded-full bg-accent"></div>
+                            </div>
+                        </div>
+                        <h3 class="mb-2 text-lg font-semibold">Mobile-First</h3>
+                        <p class="text-sm text-muted-foreground leading-relaxed">Designed for mobile devices first, then enhanced for larger screens.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <div class="mx-auto h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
+                                <div class="h-4 w-4 rounded-full bg-accent"></div>
+                            </div>
+                        </div>
+                        <h3 class="mb-2 text-lg font-semibold">SEO-Optimized</h3>
+                        <p class="text-sm text-muted-foreground leading-relaxed">Built with SEO best practices to help you rank better in search results.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <div class="mx-auto h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
+                                <div class="h-4 w-4 rounded-full bg-accent"></div>
+                            </div>
+                        </div>
+                        <h3 class="mb-2 text-lg font-semibold">Easy Updates</h3>
+                        <p class="text-sm text-muted-foreground leading-relaxed">Simple to maintain and update as your business evolves.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-primary text-primary-foreground py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center">
+                    <h2 class="text-3xl font-bold tracking-tight text-balance sm:text-4xl">Ready to Start Your Project?</h2>
+                    <p class="mt-6 text-lg leading-relaxed text-primary-foreground/90">
+                        Let's create a website that showcases your business with the same level of quality and professionalism you
+                        see here.
+                    </p>
+                    <div class="mt-10 flex flex-col items-center justify-center gap-4 hero-buttons">
+                        <button class="btn btn-default btn-lg bg-accent text-accent-foreground hover:bg-accent/90 text-base px-8">
+                            <a href="./contact.html">
+                                Start Your Project <span style="display: inline-block; font-size: 24px; margin-left: 10px;">  →</span>
+                            </a>
+                        </button>
+                        <button class="btn btn-outline btn-lg border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent">
+                            <a href="./services.html">View Our Services</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-border bg-card">
+        <div class="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <!-- Brand -->
+                <div class="lg:col-span-2">
+                    <div class="mb-4 text-2xl font-bold tracking-tight">
+                        Webify<span class="text-accent">TN</span>
+                    </div>
+                    <p class="mb-4 max-w-md text-sm text-muted-foreground leading-relaxed">
+                        Building strong web foundations that help businesses grow confidently online. Clean, high-quality static
+                        websites for professionals who value clarity and performance.
+                    </p>
+                    <div class="flex flex-col gap-2 text-sm text-muted-foreground">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+                                <path d="M17.5 19H9a2 2 0 0 1-2-2V9.5a.5.5 0 0 0-.5-.5H4"></path>
+                                <path d="m22 13-1.25-4.8a2 2 0 0 0-1.94-1.5H3.26a2 2 0 0 0-1.94 1.5L.07 13"></path>
+                                <path d="M21.5 15.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 1 1 5 0Z"></path>
+                                <path d="M17 19.4a2 2 0 1 1-4 0 2 2 0 1 1 4 0Z"></path>
+                            </svg>
+                            <span>Tunisia</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                            <a href="mailto:contact@webifytn.com" class="hover:text-accent transition-colors" aria-label="Email us at contact@webifytn.com">
+                                contact@webifytn.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="mb-4 text-sm font-semibold">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="./about.html" class="text-muted-foreground hover:text-accent transition-colors">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./services.html" class="text-muted-foreground hover:text-accent transition-colors">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./portfolio.html" class="text-muted-foreground hover:text-accent transition-colors">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="text-muted-foreground hover:text-accent transition-colors">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="mb-4 text-sm font-semibold">Services</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="./services.html#vitrine" class="text-muted-foreground hover:text-accent transition-colors">
+                                Vitrine Websites
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./services.html#landing" class="text-muted-foreground hover:text-accent transition-colors">
+                                Landing Pages
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./services.html#portfolio" class="text-muted-foreground hover:text-accent transition-colors">
+                                Portfolio Websites
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./services.html#static" class="text-muted-foreground hover:text-accent transition-colors">
+                                Static Websites
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 border-t border-border pt-8">
+                <div class="flex flex-col items-center justify-between gap-4 text-sm text-muted-foreground sm:flex-row">
+                    <p>© <span id="current-year">2025</span> WebifyTN. All rights reserved.</p>
+                    <p class="text-xs">
+                        Crafted by <span class="font-semibold">Abdou & Ameen</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

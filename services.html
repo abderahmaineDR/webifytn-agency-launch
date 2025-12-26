@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - WebifyTN</title>
+    <meta name="description" content="Professional website services: Vitrine websites, landing pages, portfolio websites, and static websites. Fast, secure, and reliable solutions for your business.">
+    <meta name="keywords" content="web design, static websites, landing pages, portfolio websites, Tunisia, digital agency">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans antialiased">
+    <nav class="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" role="navigation" aria-label="Main navigation">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <!-- Logo -->
+                <a href="./index.html" class="flex items-center gap-2" aria-label="WebifyTN Home">
+                    <div class="text-2xl font-bold tracking-tight text-foreground">
+                        Webify<span class="text-accent">TN</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden items-center gap-8 md:flex" role="menubar">
+                    <a href="./index.html" class="text-sm font-medium transition-colors hover:text-accent text-muted-foreground">Home</a>
+                    <a href="./about.html" class="text-sm font-medium transition-colors hover:text-accent text-muted-foreground">About</a>
+                    <a href="./services.html" class="text-sm font-medium transition-colors hover:text-accent text-foreground" aria-current="page">Services</a>
+                    <a href="./portfolio.html" class="text-sm font-medium transition-colors hover:text-accent text-muted-foreground">Portfolio</a>
+                    <a href="./contact.html" class="text-sm font-medium transition-colors hover:text-accent text-muted-foreground">Contact</a>
+                    <button class="theme-toggle text-foreground hover:text-accent" aria-label="Toggle dark/light mode">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <path d="M12 1v2"></path>
+                            <path d="M12 21v2"></path>
+                            <path d="M4.22 4.22l1.42 1.42"></path>
+                            <path d="M18.36 18.36l1.42 1.42"></path>
+                            <path d="M1 12h2"></path>
+                            <path d="M21 12h2"></path>
+                            <path d="M4.22 19.78l1.42-1.42"></path>
+                            <path d="M18.36 5.64l1.42-1.42"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="./contact.html" class="btn btn-default btn-sm bg-accent text-accent-foreground hover:bg-accent/90" role="button">Get Started</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="nav-menu-btn md:hidden" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu border-t border-border/40 bg-background" id="mobile-menu" role="menu" aria-label="Mobile navigation">
+            <div class="container mx-auto space-y-1 px-4 py-4">
+                <a href="./index.html" class="mobile-menu-link" role="menuitem">Home</a>
+                <a href="./about.html" class="mobile-menu-link" role="menuitem">About</a>
+                <a href="./services.html" class="mobile-menu-link active" role="menuitem" aria-current="page">Services</a>
+                <a href="./portfolio.html" class="mobile-menu-link" role="menuitem">Portfolio</a>
+                <a href="./contact.html" class="mobile-menu-link" role="menuitem">Contact</a>
+                <div class="pt-2">
+                    <button class="theme-toggle w-full btn btn-outline text-foreground hover:text-accent" role="button" aria-label="Toggle dark/light mode">
+                        <span class="flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <path d="M12 1v2"></path>
+                                <path d="M12 21v2"></path>
+                                <path d="M4.22 4.22l1.42 1.42"></path>
+                                <path d="M18.36 18.36l1.42 1.42"></path>
+                                <path d="M1 12h2"></path>
+                                <path d="M21 12h2"></path>
+                                <path d="M4.22 19.78l1.42-1.42"></path>
+                                <path d="M18.36 5.64l1.42-1.42"></path>
+                            </svg>
+                            Toggle Theme
+                        </span>
+                    </button>
+                </div>
+                <div class="pt-2">
+                    <a href="./contact.html" class="btn btn-default w-full bg-accent text-accent-foreground hover:bg-accent/90" role="button">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="min-h-screen">
+        <!-- Hero Section -->
+        <section class="bg-primary text-primary-foreground py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center">
+                    <h1 class="text-4xl font-bold tracking-tight text-balance sm:text-5xl">Our Services</h1>
+                    <p class="mt-6 text-lg leading-relaxed text-primary-foreground/90 text-pretty">
+                        Professional website solutions built on clarity, performance, and trust. We specialize in static websites
+                        that deliver exceptional results without unnecessary complexity.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Detail -->
+        <section class="bg-background py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="space-y-24">
+                    <div class="scroll-mt-20" id="vitrine">
+                        <div class="card overflow-hidden border-border">
+                            <div class="card-content p-8">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-accent/10">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-accent">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h2 class="text-2xl sm:text-3xl mb-2">Vitrine Websites</h2>
+                                        <p class="text-lg text-muted-foreground">Professional showcase websites that represent your business</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content pt-8">
+                                <div class="grid gap-8 lg:grid-cols-2">
+                                    <div class="space-y-6">
+                                        <div>
+                                            <h3 class="mb-3 text-lg font-semibold">What It Is</h3>
+                                            <p class="text-muted-foreground leading-relaxed">A vitrine website is your digital storefront. We create elegant, professional websites that clearly communicate who you are, what you do, and why clients should choose you. Perfect for businesses that need a strong, credible online presence.</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-medium text-accent">Ideal for: Small businesses, service providers, consultants, local businesses</p>
+                                        </div>
+                                        <div>
+                                            <h3 class="mb-3 text-lg font-semibold">Why WebifyTN's Approach Is Better</h3>
+                                            <p class="text-muted-foreground leading-relaxed">Unlike complex CMS platforms, our vitrine websites are lightweight, secure, and load instantly. You get a professional web presence without the overhead of databases, plugins, or security vulnerabilities.</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="mb-4 text-lg font-semibold">Key Benefits</h3>
+                                        <ul class="space-y-3">
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Professional design that builds credibility</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Clear presentation of your services and values</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Fast loading times for better user experience</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Mobile-responsive for all devices</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">SEO-optimized for local search visibility</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Easy to update and maintain</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scroll-mt-20" id="landing">
+                        <div class="card overflow-hidden border-border">
+                            <div class="card-content p-8">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-accent/10">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-accent">
+                                            <path d="M12 19V5"></path>
+                                            <path d="M5 12l7-7 7 7"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h2 class="text-2xl sm:text-3xl mb-2">Landing Pages</h2>
+                                        <p class="text-lg text-muted-foreground">High-converting pages designed to drive action</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content pt-8">
+                                <div class="grid gap-8 lg:grid-cols-2">
+                                    <div class="space-y-6">
+                                        <div>
+                                            <h3 class="mb-3 text-lg font-semibold">What It Is</h3>
+                                            <p class="text-muted-foreground leading-relaxed">Landing pages are focused, single-purpose websites designed to convert visitors into customers, subscribers, or leads. We craft compelling landing pages with clear messaging, strong calls-to-action, and optimized layouts that guide visitors toward your goal.</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-medium text-accent">Ideal for: Product launches, lead generation, event registration, campaign promotions</p>
+                                        </div>
+                                        <div>
+                                            <h3 class="mb-3 text-lg font-semibold">Why WebifyTN's Approach Is Better</h3>
+                                            <p class="text-muted-foreground leading-relaxed">Our landing pages are built for speed and conversion. Static architecture means your page loads instantly, keeping bounce rates low and conversion rates high. No bloated frameworks or unnecessary code.</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="mb-4 text-lg font-semibold">Key Benefits</h3>
+                                        <ul class="space-y-3">
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Focused design that eliminates distractions</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Strategic content layout for maximum conversions</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Fast loading for better engagement</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">A/B testing-ready structure</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Integration with email marketing tools</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Analytics-ready for tracking performance</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scroll-mt-20" id="portfolio">
+                        <div class="card overflow-hidden border-border">
+                            <div class="card-content p-8">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-accent/10">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-accent">
+                                            <path d="M2 3h20"></path>
+                                            <path d="M21 7H3"></path>
+                                            <path d="M18 11H6"></path>
+                                            <path d="M15 15H9"></path>
+                                            <path d="M12 19H10"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h2 class="text-2xl sm:text-3xl mb-2">Portfolio Websites</h2>
+                                        <p class="text-lg text-muted-foreground">Showcase your work and attract ideal clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content pt-8">
+                                <div class="grid gap-8 lg:grid-cols-2">
+                                    <div class="space-y-6">
+                                        <div>
+                                            <h3 class="mb-3 text-lg font-semibold">What It Is</h3>
+                                            <p class="text-muted-foreground leading-relaxed">Your portfolio is your best sales tool. We design beautiful, professional portfolio websites that highlight your work, tell your story, and make it easy for potential clients to understand your value and get in touch.</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-medium text-accent">Ideal for: Designers, photographers, artists, freelancers, creatives, agencies</p>
+                                        </div>
+                                        <div>
+                                            <h3 class="mb-3 text-lg font-semibold">Why WebifyTN's Approach Is Better</h3>
+                                            <p class="text-muted-foreground leading-relaxed">A portfolio website should let your work shine, not struggle with slow loading times. Our static approach ensures your images and projects load quickly while maintaining exceptional quality.</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="mb-4 text-lg font-semibold">Key Benefits</h3>
+                                        <ul class="space-y-3">
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Visual-first design that showcases your work</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Project galleries with filtering and categorization</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">About section that tells your story</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Contact integration for easy client inquiries</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Fast image loading with optimization</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Professional presentation that wins clients</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scroll-mt-20" id="static">
+                        <div class="card overflow-hidden border-border">
+                            <div class="card-content p-8">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-accent/10">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-accent">
+                                            <path d="M10 2h4"></path>
+                                            <path d="M4 6h16"></path>
+                                            <path d="M6 10h12"></path>
+                                            <path d="M8 14h8"></path>
+                                            <path d="M9 18h6"></path>
+                                            <path d="M11 22h2"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h2 class="text-2xl sm:text-3xl mb-2">Static Websites</h2>
+                                        <p class="text-lg text-muted-foreground">Fast, secure, and reliable websites built with modern technology</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-content pt-8">
+                                <div class="grid gap-8 lg:grid-cols-2">
+                                    <div class="space-y-6">
+                                        <div>
+                                            <h3 class="mb-3 text-lg font-semibold">What It Is</h3>
+                                            <p class="text-muted-foreground leading-relaxed">Static websites represent the future of web development. By pre-building your pages and serving them directly, we eliminate database queries, server processing, and security vulnerabilities. The result is a website that's incredibly fast, highly secure, and remarkably reliable.</p>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm font-medium text-accent">Ideal for: Any business that values performance, security, and reliability</p>
+                                        </div>
+                                        <div>
+                                            <h3 class="mb-3 text-lg font-semibold">Why WebifyTN's Approach Is Better</h3>
+                                            <p class="text-muted-foreground leading-relaxed">Traditional dynamic websites are overkill for most businesses. Static websites deliver better performance, stronger security, and lower costs while providing everything most businesses need for their online presence.</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="mb-4 text-lg font-semibold">Key Benefits</h3>
+                                        <ul class="space-y-3">
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Lightning-fast loading speeds</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Maximum security with no database vulnerabilities</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Lower hosting costs and maintenance</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">Excellent SEO performance</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">No server-side processing delays</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-accent mt-0.5">
+                                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                                </svg>
+                                                <span class="text-muted-foreground leading-relaxed">99.9% uptime and reliability</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Overview -->
+        <section class="bg-muted py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center">
+                    <h2 class="text-3xl font-bold tracking-tight text-balance sm:text-4xl">Our Process</h2>
+                    <p class="mt-4 text-lg text-muted-foreground leading-relaxed">
+                        Simple, transparent, and focused on delivering results
+                    </p>
+                </div>
+
+                <div class="mt-16 grid gap-8 md:grid-cols-4">
+                    <div class="text-center">
+                        <div class="mb-4 text-4xl font-bold text-accent">01</div>
+                        <h3 class="mb-2 text-lg font-semibold">Discovery</h3>
+                        <p class="text-sm text-muted-foreground leading-relaxed">We learn about your business, goals, and target audience to create the right solution.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="mb-4 text-4xl font-bold text-accent">02</div>
+                        <h3 class="mb-2 text-lg font-semibold">Design</h3>
+                        <p class="text-sm text-muted-foreground leading-relaxed">We craft a clean, professional design that aligns with your brand and objectives.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="mb-4 text-4xl font-bold text-accent">03</div>
+                        <h3 class="mb-2 text-lg font-semibold">Development</h3>
+                        <p class="text-sm text-muted-foreground leading-relaxed">We build your website with modern technology, ensuring speed and reliability.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="mb-4 text-4xl font-bold text-accent">04</div>
+                        <h3 class="mb-2 text-lg font-semibold">Launch</h3>
+                        <p class="text-sm text-muted-foreground leading-relaxed">We deploy your website and ensure everything works perfectly before going live.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-primary text-primary-foreground py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center">
+                    <h2 class="text-3xl font-bold tracking-tight text-balance sm:text-4xl">Ready to Get Started?</h2>
+                    <p class="mt-6 text-lg leading-relaxed text-primary-foreground/90">
+                        Let's discuss your project and create a website that helps your business grow with confidence.
+                    </p>
+                    <div class="mt-10 flex flex-col items-center justify-center gap-4 hero-buttons">
+                        <button class="btn btn-default btn-lg bg-accent text-accent-foreground hover:bg-accent/90 text-base px-8">
+                            <a href="./contact.html">
+                                Start Your Project <span style="display: inline-block; font-size: 24px; margin-left: 10px;">  →</span>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-border bg-card">
+        <div class="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <!-- Brand -->
+                <div class="lg:col-span-2">
+                    <div class="mb-4 text-2xl font-bold tracking-tight">
+                        Webify<span class="text-accent">TN</span>
+                    </div>
+                    <p class="mb-4 max-w-md text-sm text-muted-foreground leading-relaxed">
+                        Building strong web foundations that help businesses grow confidently online. Clean, high-quality static
+                        websites for professionals who value clarity and performance.
+                    </p>
+                    <div class="flex flex-col gap-2 text-sm text-muted-foreground">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+                                <path d="M17.5 19H9a2 2 0 0 1-2-2V9.5a.5.5 0 0 0-.5-.5H4"></path>
+                                <path d="m22 13-1.25-4.8a2 2 0 0 0-1.94-1.5H3.26a2 2 0 0 0-1.94 1.5L.07 13"></path>
+                                <path d="M21.5 15.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 1 1 5 0Z"></path>
+                                <path d="M17 19.4a2 2 0 1 1-4 0 2 2 0 1 1 4 0Z"></path>
+                            </svg>
+                            <span>Tunisia</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                            <a href="mailto:contact@webifytn.com" class="hover:text-accent transition-colors" aria-label="Email us at contact@webifytn.com">
+                                contact@webifytn.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="mb-4 text-sm font-semibold">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="./about.html" class="text-muted-foreground hover:text-accent transition-colors">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./services.html" class="text-muted-foreground hover:text-accent transition-colors">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./portfolio.html" class="text-muted-foreground hover:text-accent transition-colors">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="text-muted-foreground hover:text-accent transition-colors">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="mb-4 text-sm font-semibold">Services</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="./services.html#vitrine" class="text-muted-foreground hover:text-accent transition-colors">
+                                Vitrine Websites
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./services.html#landing" class="text-muted-foreground hover:text-accent transition-colors">
+                                Landing Pages
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./services.html#portfolio" class="text-muted-foreground hover:text-accent transition-colors">
+                                Portfolio Websites
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./services.html#static" class="text-muted-foreground hover:text-accent transition-colors">
+                                Static Websites
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 border-t border-border pt-8">
+                <div class="flex flex-col items-center justify-between gap-4 text-sm text-muted-foreground sm:flex-row">
+                    <p>© <span id="current-year">2025</span> WebifyTN. All rights reserved.</p>
+                    <p class="text-xs">
+                        Crafted by <span class="font-semibold">Abdou & Ameen</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

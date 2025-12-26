@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - WebifyTN</title>
+    <meta name="description" content="Learn about WebifyTN, our philosophy, and the team behind your website. Founded by Abdou & Ameen to deliver clarity, performance, and trust.">
+    <meta name="keywords" content="web design, static websites, landing pages, portfolio websites, Tunisia, digital agency">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans antialiased">
+    <nav class="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" role="navigation" aria-label="Main navigation">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <!-- Logo -->
+                <a href="./index.html" class="flex items-center gap-2" aria-label="WebifyTN Home">
+                    <div class="text-2xl font-bold tracking-tight text-foreground">
+                        Webify<span class="text-accent">TN</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden items-center gap-8 md:flex" role="menubar">
+                    <a href="./index.html" class="text-sm font-medium transition-colors hover:text-accent text-muted-foreground">Home</a>
+                    <a href="./about.html" class="text-sm font-medium transition-colors hover:text-accent text-foreground" aria-current="page">About</a>
+                    <a href="./services.html" class="text-sm font-medium transition-colors hover:text-accent text-muted-foreground">Services</a>
+                    <a href="./portfolio.html" class="text-sm font-medium transition-colors hover:text-accent text-muted-foreground">Portfolio</a>
+                    <a href="./contact.html" class="text-sm font-medium transition-colors hover:text-accent text-muted-foreground">Contact</a>
+                    <button class="theme-toggle text-foreground hover:text-accent" aria-label="Toggle dark/light mode">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <path d="M12 1v2"></path>
+                            <path d="M12 21v2"></path>
+                            <path d="M4.22 4.22l1.42 1.42"></path>
+                            <path d="M18.36 18.36l1.42 1.42"></path>
+                            <path d="M1 12h2"></path>
+                            <path d="M21 12h2"></path>
+                            <path d="M4.22 19.78l1.42-1.42"></path>
+                            <path d="M18.36 5.64l1.42-1.42"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="./contact.html" class="btn btn-default btn-sm bg-accent text-accent-foreground hover:bg-accent/90" role="button">Get Started</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="nav-menu-btn md:hidden" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu border-t border-border/40 bg-background" id="mobile-menu" role="menu" aria-label="Mobile navigation">
+            <div class="container mx-auto space-y-1 px-4 py-4">
+                <a href="./index.html" class="mobile-menu-link" role="menuitem">Home</a>
+                <a href="./about.html" class="mobile-menu-link active" role="menuitem" aria-current="page">About</a>
+                <a href="./services.html" class="mobile-menu-link" role="menuitem">Services</a>
+                <a href="./portfolio.html" class="mobile-menu-link" role="menuitem">Portfolio</a>
+                <a href="./contact.html" class="mobile-menu-link" role="menuitem">Contact</a>
+                <div class="pt-2">
+                    <button class="theme-toggle w-full btn btn-outline text-foreground hover:text-accent" role="button" aria-label="Toggle dark/light mode">
+                        <span class="flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <path d="M12 1v2"></path>
+                                <path d="M12 21v2"></path>
+                                <path d="M4.22 4.22l1.42 1.42"></path>
+                                <path d="M18.36 18.36l1.42 1.42"></path>
+                                <path d="M1 12h2"></path>
+                                <path d="M21 12h2"></path>
+                                <path d="M4.22 19.78l1.42-1.42"></path>
+                                <path d="M18.36 5.64l1.42-1.42"></path>
+                            </svg>
+                            Toggle Theme
+                        </span>
+                    </button>
+                </div>
+                <div class="pt-2">
+                    <a href="./contact.html" class="btn btn-default w-full bg-accent text-accent-foreground hover:bg-accent/90" role="button">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="min-h-screen">
+        <!-- Hero Section -->
+        <section class="bg-primary text-primary-foreground py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center">
+                    <h1 class="text-4xl font-bold tracking-tight text-balance sm:text-5xl">About WebifyTN</h1>
+                    <p class="mt-6 text-lg leading-relaxed text-primary-foreground/90 text-pretty">
+                        We're a digital agency dedicated to building websites that work. No complexity, no confusion—just clean,
+                        professional websites that help your business grow.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story -->
+        <section class="bg-background py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-3xl">
+                    <h2 class="text-3xl font-bold tracking-tight text-balance mb-6">Our Story</h2>
+                    <div class="prose prose-lg max-w-none space-y-4 text-muted-foreground leading-relaxed">
+                        <p>
+                            WebifyTN was born from a simple observation: most businesses don't need complicated websites. They need
+                            clear, professional web presences that load quickly, look great, and help them connect with customers.
+                        </p>
+                        <p>
+                            Too many web agencies push bloated platforms, unnecessary features, and complex maintenance requirements
+                            on clients who just want a solid online presence. We saw an opportunity to do things differently.
+                        </p>
+                        <p>
+                            By focusing on static website architecture, we deliver websites that are faster, more secure, and more
+                            reliable than traditional platforms—while being easier and more affordable to maintain.
+                        </p>
+                        <p class="font-medium text-foreground">
+                            Our approach is simple: understand your business, design with clarity, build with performance in mind,
+                            and deliver with confidence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy -->
+        <section class="bg-muted py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center mb-16">
+                    <h2 class="text-3xl font-bold tracking-tight text-balance sm:text-4xl">Our Philosophy</h2>
+                    <p class="mt-4 text-lg text-muted-foreground leading-relaxed">
+                        Three core principles guide everything we create
+                    </p>
+                </div>
+
+                <div class="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
+                    <div class="card border-border">
+                        <div class="card-content p-6">
+                            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-accent">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                                </svg>
+                            </div>
+                            <h3 class="mb-3 text-xl font-semibold">Clarity</h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed">Every website should communicate clearly. We eliminate unnecessary complexity and focus on what matters: helping your visitors understand your value and take action. Clean design, clear messaging, purposeful elements.</p>
+                        </div>
+                    </div>
+                    <div class="card border-border">
+                        <div class="card-content p-6">
+                            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-accent">
+                                    <line x1="12" y1="19" x2="12" y2="5"></line>
+                                    <polyline points="5 12 12 5 19 12"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="mb-3 text-xl font-semibold">Performance</h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed">Speed is not optional. Slow websites lose visitors, hurt SEO, and damage credibility. We build static websites that load instantly, rank better, and provide exceptional user experiences that keep people engaged.</p>
+                        </div>
+                    </div>
+                    <div class="card border-border">
+                        <div class="card-content p-6">
+                            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-accent">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="mb-3 text-xl font-semibold">Simplicity</h3>
+                            <p class="text-sm text-muted-foreground leading-relaxed">Simple doesn't mean basic—it means intentional. We believe the best websites are the ones that do exactly what they need to do, without unnecessary features, bloat, or complexity. Less is more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founders -->
+        <section class="bg-background py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center mb-16">
+                    <h2 class="text-3xl font-bold tracking-tight text-balance sm:text-4xl">Meet the Founders</h2>
+                    <p class="mt-4 text-lg text-muted-foreground leading-relaxed">
+                        Built by developers who care about quality
+                    </p>
+                </div>
+
+                <div class="grid gap-12 md:grid-cols-2 max-w-4xl mx-auto">
+                    <div class="card border-border">
+                        <div class="card-content p-8">
+                            <div class="mb-4">
+                                <div class="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-accent/10">
+                                    <span class="text-2xl font-bold text-accent">A</span>
+                                </div>
+                                <h3 class="text-2xl font-semibold mb-1">Abdou</h3>
+                                <p class="text-sm text-accent font-medium">Co-Founder & Developer</p>
+                            </div>
+                            <p class="text-muted-foreground leading-relaxed">Abdou brings years of web development experience and a passion for building efficient, scalable solutions. He specializes in modern web technologies and performance optimization, ensuring every website we deliver is built to last.</p>
+                        </div>
+                    </div>
+                    <div class="card border-border">
+                        <div class="card-content p-8">
+                            <div class="mb-4">
+                                <div class="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-accent/10">
+                                    <span class="text-2xl font-bold text-accent">A</span>
+                                </div>
+                                <h3 class="text-2xl font-semibold mb-1">Ameen</h3>
+                                <p class="text-sm text-accent font-medium">Co-Founder & Developer</p>
+                            </div>
+                            <p class="text-muted-foreground leading-relaxed">Ameen combines technical expertise with a keen eye for design and user experience. His focus on clean code and intuitive interfaces ensures our websites are not just functional, but delightful to use.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision -->
+        <section class="bg-muted py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-3xl">
+                    <h2 class="text-3xl font-bold tracking-tight text-balance mb-6 text-center">Our Vision</h2>
+                    <div class="space-y-4 text-lg text-muted-foreground leading-relaxed text-center">
+                        <p>
+                            We believe every business deserves a professional web presence that works for them, not against them.
+                        </p>
+                        <p>
+                            Our vision is to help businesses across Tunisia and beyond establish strong digital foundations that
+                            support their growth without technical headaches, security concerns, or performance issues.
+                        </p>
+                        <p class="font-medium text-foreground pt-4">
+                            We're not just building websites—we're building lasting partnerships with clients who value quality,
+                            clarity, and results.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Statement -->
+        <section class="bg-background py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center">
+                    <h2 class="text-3xl font-bold tracking-tight text-balance mb-6">Our Mission</h2>
+                    <p class="text-xl text-foreground font-medium leading-relaxed mb-8 text-pretty">
+                        "Build strong web foundations that help businesses grow confidently online."
+                    </p>
+                    <p class="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+                        This is more than a tagline—it's our commitment to you. Every website we build is designed to give you
+                        confidence in your online presence and support your business as it grows.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-primary text-primary-foreground py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center">
+                    <h2 class="text-3xl font-bold tracking-tight text-balance sm:text-4xl">Let's Work Together</h2>
+                    <p class="mt-6 text-lg leading-relaxed text-primary-foreground/90">
+                        Ready to build a website that represents your business with clarity and performs with confidence? We'd
+                        love to hear from you.
+                    </p>
+                    <div class="mt-10 flex flex-col items-center justify-center gap-4 hero-buttons">
+                        <button class="btn btn-default btn-lg bg-accent text-accent-foreground hover:bg-accent/90 text-base px-8">
+                            <a href="./contact.html">
+                                Get in Touch <span style="display: inline-block; font-size: 24px; margin-left: 10px;">  →</span>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-border bg-card">
+        <div class="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <!-- Brand -->
+                <div class="lg:col-span-2">
+                    <div class="mb-4 text-2xl font-bold tracking-tight">
+                        Webify<span class="text-accent">TN</span>
+                    </div>
+                    <p class="mb-4 max-w-md text-sm text-muted-foreground leading-relaxed">
+                        Building strong web foundations that help businesses grow confidently online. Clean, high-quality static
+                        websites for professionals who value clarity and performance.
+                    </p>
+                    <div class="flex flex-col gap-2 text-sm text-muted-foreground">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+                                <path d="M17.5 19H9a2 2 0 0 1-2-2V9.5a.5.5 0 0 0-.5-.5H4"></path>
+                                <path d="m22 13-1.25-4.8a2 2 0 0 0-1.94-1.5H3.26a2 2 0 0 0-1.94 1.5L.07 13"></path>
+                                <path d="M21.5 15.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 1 1 5 0Z"></path>
+                                <path d="M17 19.4a2 2 0 1 1-4 0 2 2 0 1 1 4 0Z"></path>
+                            </svg>
+                            <span>Tunisia</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                            <a href="mailto:contact@webifytn.com" class="hover:text-accent transition-colors" aria-label="Email us at contact@webifytn.com">
+                                contact@webifytn.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="mb-4 text-sm font-semibold">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="./about.html" class="text-muted-foreground hover:text-accent transition-colors">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./services.html" class="text-muted-foreground hover:text-accent transition-colors">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./portfolio.html" class="text-muted-foreground hover:text-accent transition-colors">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="text-muted-foreground hover:text-accent transition-colors">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="mb-4 text-sm font-semibold">Services</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="./services.html#vitrine" class="text-muted-foreground hover:text-accent transition-colors">
+                                Vitrine Websites
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./services.html#landing" class="text-muted-foreground hover:text-accent transition-colors">
+                                Landing Pages
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./services.html#portfolio" class="text-muted-foreground hover:text-accent transition-colors">
+                                Portfolio Websites
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./services.html#static" class="text-muted-foreground hover:text-accent transition-colors">
+                                Static Websites
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 border-t border-border pt-8">
+                <div class="flex flex-col items-center justify-between gap-4 text-sm text-muted-foreground sm:flex-row">
+                    <p>© <span id="current-year">2025</span> WebifyTN. All rights reserved.</p>
+                    <p class="text-xs">
+                        Crafted by <span class="font-semibold">Abdou & Ameen</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
